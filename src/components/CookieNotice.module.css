@@ -1,0 +1,11 @@
+﻿.notice { position: fixed; z-index: 10; bottom: 24px; left: 50%; transform: translateX(-50%); width: calc(100% - 128px); max-width: 1312px; display: flex; align-items: center; gap: 24px; padding: 20px 24px; border-radius: 16px; color: var(--color-white); background: var(--color-dark); box-shadow: 0 8px 30px rgb(0 0 0 / 12%); }
+.notice p { margin: 0; flex: 1; font-size: 14px; line-height: 1.6; }
+.accept { border: 0; border-radius: 28px; padding: 14px 48px; background: var(--color-beige); color: var(--color-dark); font-weight: 600; }
+.close { background: none; border: 0; padding: 8px 12px; font-size: 24px; color: var(--color-white); }
+@media (max-width: 1100px) { .notice { width: calc(100% - 64px); } }
+@media (max-width: 600px) { .notice { width: calc(100% - 32px); bottom: 16px; padding: 16px; gap: 12px; flex-wrap: wrap; } .notice p { flex-basis: 100%; padding-right: 30px; } .close { position: absolute; top: 8px; right: 8px; } .accept { padding: 12px 32px; } }
+@media (max-width: 600px) {
+  .notice { bottom: max(12px, env(safe-area-inset-bottom)); max-height: calc(100dvh - 24px); overflow-y: auto; }
+  .notice p { min-width: 0; overflow-wrap: anywhere; padding-right: 44px; }
+  .accept, .close { min-height: 44px; min-width: 44px; }
+}

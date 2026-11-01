@@ -1,0 +1,28 @@
+﻿.header { background: var(--color-background); }
+.inner { max-width: 1440px; min-height: 104px; margin: auto; padding: 20px 64px; display: flex; align-items: center; gap: 32px; }
+.menu { flex-shrink: 0; border: 0; background: none; color: var(--color-dark); padding: 10px 0; display: flex; gap: 10px; align-items: center; }
+.menu span { font-size: 22px; }
+.brand { display: flex; flex-shrink: 0; align-items: center; gap: 24px; text-decoration: none; }
+.brand img { width: 68px; height: 60px; object-fit: contain; }
+.brand span { font-family: var(--font-heading); font-size: 20px; line-height: 1; letter-spacing: .04em; }
+.searchArea { min-width: 0; flex: 1; margin-left: auto; max-width: 480px; position: relative; }
+.search { display: flex; align-items: center; border-radius: 32px; background: var(--color-white); padding: 8px 16px; }
+.search button { display: flex; align-items: center; padding: 6px; border: 0; background: none; color: var(--color-muted); }
+.search input { border: 0; background: none; padding: 6px; width: 100%; min-width: 0; font-size: 14px; color: var(--color-dark); }
+.search input::placeholder { color: var(--color-muted); opacity: 1; }
+.status { margin: 8px 0 0; font-size: 13px; }
+.account { font-size: 16px; text-decoration: none; flex-shrink: 0; }
+.account span { font-size: 12px; margin-left: 5px; }
+@media (max-width: 1100px) { .inner { padding: 20px 32px; gap: 22px; flex-wrap: wrap; } .searchArea { order: 4; max-width: none; flex-basis: 100%; } .account { margin-left: auto; } }
+@media (max-width: 600px) { .inner { padding: 16px 20px; gap: 16px; } .brand { gap: 10px; margin-left: auto; } .brand img { width: 44px; height: 44px; } .brand span { font-size: 15px; } .account { margin: 0; width: 100%; text-align: right; font-size: 14px; } .search input { font-size: 12px; } }
+@media (max-width: 600px) {
+  .inner { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 16px; min-height: 0; }
+  .menu { min-height: 44px; }
+  .brand { min-width: 0; justify-self: end; margin-left: 0; }
+  .brand img { flex-shrink: 0; }
+  .searchArea { grid-column: 1 / -1; width: 100%; order: 2; }
+  .search { padding: 4px 10px; min-height: 48px; }
+  .search input { font-size: 16px; min-height: 40px; }
+  .search button { min-width: 44px; min-height: 44px; justify-content: center; flex-shrink: 0; }
+  .account { grid-column: 1 / -1; order: 3; width: fit-content; max-width: 100%; justify-self: end; min-height: 44px; display: inline-flex; align-items: center; overflow-wrap: anywhere; }
+}

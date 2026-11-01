@@ -1,0 +1,15 @@
+.root { position: relative; min-width: 0; }
+.trigger { width: 100%; min-height: 56px; padding: 12px 14px; border: 1px solid #DDD7CB; border-radius: 8px; background: var(--color-white); color: var(--color-dark); font: inherit; font-size: 13px; line-height: 1.5; text-align: left; }
+.trigger[aria-expanded='true'] { border-color: var(--color-gold); }
+.trigger:disabled { color: var(--color-muted); cursor: default; }
+.panel { position: absolute; top: calc(100% + 4px); left: 0; z-index: 2; width: 100%; min-width: 0; max-width: 100%; max-height: 480px; overflow-y: auto; background: var(--color-white); border: 1px solid #DDD7CB; border-radius: 10px; padding: 8px 16px 16px; margin: 0; box-shadow: 0 8px 24px rgb(32 43 48 / 12%); }
+.legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.option { display: flex; gap: 10px; align-items: center; min-height: 44px; padding: 8px 0; font-size: 14px; line-height: 1.5; cursor: pointer; }
+.option input { width: 20px; height: 20px; margin: 0; accent-color: var(--color-gold); flex-shrink: 0; }
+.option small { color: var(--color-muted); }
+.option:has(input:disabled) { color: var(--color-muted); cursor: default; }
+.clear, .close { min-height: 44px; margin-top: 8px; padding: 8px 12px; font: inherit; font-size: 14px; border: 1px solid #DDD7CB; border-radius: 8px; background: var(--color-background); color: var(--color-dark); }
+.close { margin-left: 8px; }
+@media (max-width: 600px) {
+  .panel { position: static; width: 100%; max-width: 100%; max-height: none; box-shadow: none; margin-top: 4px; }
+}

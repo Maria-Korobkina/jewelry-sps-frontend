@@ -1,0 +1,10 @@
+.actions { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.primaryActions { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; min-width: 0; }
+.actions a { display: inline-flex; align-items: center; justify-content: center; text-align: center; line-height: 1.4; box-sizing: border-box; }
+.actions a, .actions a:hover, .actions a:active { text-decoration: none; }
+.actions a:focus-visible { outline: 3px solid var(--color-gold); outline-offset: 4px; }
+@media (max-width: 600px) {
+  .actions { flex-direction: column; align-items: stretch; gap: 16px; }
+  .primaryActions { align-items: stretch; width: 100%; }
+  .actions a, .actions button { width: 100%; max-width: 100%; overflow-wrap: anywhere; }
+}

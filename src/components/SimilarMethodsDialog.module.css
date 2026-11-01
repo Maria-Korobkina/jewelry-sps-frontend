@@ -1,0 +1,9 @@
+.dialog { width: min(900px, calc(100% - 32px)); max-height: 90dvh; margin: auto; padding: 32px; border: 1px solid var(--color-beige); border-radius: 16px; background: var(--color-background); color: var(--color-dark); overflow-y: auto; overflow-wrap: anywhere; }
+.dialog::backdrop { background: #202b3099; }
+.dialog h2 { font-family: var(--font-heading); font-size: 36px; line-height: 1.2; margin-right: 32px; margin-bottom: 24px; }
+.dialog p { font-family: var(--font-body); font-size: 18px; line-height: 1.65; }
+.method { margin-top: 32px; }
+.method > h3 { font-family: var(--font-heading); font-size: 30px; line-height: 1.25; }
+.close { position: sticky; top: 0; float: right; width: 40px; height: 40px; border: 0; border-radius: 50%; background: var(--color-white); color: var(--color-dark); font-size: 28px; }
+.dialog :is(a, button):focus-visible { outline: 3px solid var(--color-gold); outline-offset: 4px; }
+@media (max-width: 600px) { .dialog { padding: 20px; } .dialog h2 { font-size: 30px; } .method > h3 { font-size: 26px; } .dialog p { font-size: 16px; } }
