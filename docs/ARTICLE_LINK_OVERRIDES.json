@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "ip-jurisdiction",
+    "source": "docs/source-materials/update-2026-10-27/20 Подсудность споров по интеллектуальным правам (1).docx",
+    "sha256": "ae3e310f8d5acc1cf611796c0d1cd5d92f3b174cdfb16724b8e6fa99021ac92e",
+    "sourceIndex": 47,
+    "runs": [
+      {
+        "text": "Чтобы не считать вручную по таблицам Налогового кодекса, воспользуйтесь калькулятором госпошлины: ",
+        "href": null
+      },
+      {
+        "text": "для арбитражных судов",
+        "href": "https://calc.consultant.ru/gosposhlina-arbitr?utm_source=sps#Imusch_1"
+      },
+      {
+        "text": ", ",
+        "href": null
+      },
+      {
+        "text": "для судов общей юрисдикции",
+        "href": "https://calc.consultant.ru/gosposhlina-soj?utm_source=sps#Imusch_1"
+      },
+      {
+        "text": ". ",
+        "href": null
+      }
+    ]
+  }
+]
